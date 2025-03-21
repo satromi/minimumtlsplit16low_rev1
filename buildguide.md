@@ -17,7 +17,7 @@ PCBには、表面と裏面があります。"minimum TL Split Keyboard 16mm Low
 
 ダイオードを、左右PCB裏面に実装します。ダイオードは極性があるので、ダイオードのカソード（シルク印刷で白い線が入っている方）をPCB裏面のシルク印刷でK（カソード）と記載されている方になるよう、左右それぞれ36カ所半田付けしていきます。
 
-※表面実装ダイオードの白い線は見づらいので、見えにくい場合はスマホカメラで撮影すると見やすいです。
+※表面実装ダイオードの白い線は見づらいので、見えにくい場合は照明にかざしてみたり、スマホカメラで撮影すると見やすいです。
 
 - 4.7kΩ抵抗を左側PCB表面に2カ所実装します。
 
@@ -59,6 +59,8 @@ PCBから外した状態で、部品（USBコネクタなど）が実装され�
 minimum TL Split Keyboardのファームウエアは、 [satromi_mintlsplit_default.hex](https://github.com/satromi/minimumtlsplit16_rev1/blob/main/hex/satromi_mintlsplit_default.hex) をダウンロードしてQMK Toolboxで書き込みます。
 
 ファームウェアは、左右のProMicroそれぞれに書き込む必要があります。
+
+書き込み時のProMicroリセットは、ピンセットや銅線などでリセット（RST）とグラウンド（GND）をショートさせてリセットさせてください。
 
 Dvorak配列のファームも公開しています。[satromi_mintlsplit_dvorak.hex](https://github.com/satromi/minimumtlsplit16_rev1/blob/main/hex/satromi_mintlsplit_dvorak.hex) をダウンロードして、QMK Toolboxで書き込みます。
 
